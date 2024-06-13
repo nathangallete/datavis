@@ -1,0 +1,11 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs/dataVis - UFMG/config/applicationhost.config
+/.vs/dataVis - UFMG/FileContentIndex/5a8ea958-78f2-4410-9fd6-53d986a5b65c.vsidx
+/.vs/dataVis - UFMG/FileContentIndex/dd79b60e-8dd4-4f1c-9a92-9b65d37866e8.vsidx
+/.vs/dataVis - UFMG/FileContentIndex/fd9d8fac-d3a4-464f-a1b3-2deaca3b880a.vsidx
+/.vs/dataVis - UFMG/FileContentIndex
+/.vs/dataVis - UFMG/v17
+/.vs
