@@ -1,0 +1,120 @@
+/* Reset básico para remover margens e paddings padrão */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos para o body */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    padding-top: 60px; /* Espaço para o header fixo */
+}
+
+/* Estilos para o header */
+header {
+    background: #333;
+    color: #fff;
+    padding: 1em 0;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+    header h1 {
+        margin-bottom: 0.5em;
+    }
+
+/* Estilos para a navegação */
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+    nav ul li {
+        display: inline;
+        margin: 0 1em;
+    }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+            nav ul li a:hover {
+                text-decoration: underline;
+            }
+
+/* Estilos para o main */
+main {
+    padding: 1em;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+section {
+    margin-bottom: 2em;
+    background: #fff;
+    padding: 1em;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+    section h2 {
+        margin-bottom: 0.5em;
+    }
+
+    section p {
+        margin-bottom: 1em;
+    }
+
+/* Estilos para o formulário */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+    form label {
+        margin-bottom: 0.5em;
+        font-weight: bold;
+    }
+
+    form input, form textarea, form button {
+        margin-bottom: 1em;
+        padding: 0.5em;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+
+        form input:focus, form textarea:focus {
+            border-color: #333;
+            outline: none;
+        }
+
+    form button {
+        background: #333;
+        color: #fff;
+        cursor: pointer;
+        border: none;
+    }
+
+        form button:hover {
+            background: #555;
+        }
+
+/* Estilos para o footer */
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+}
