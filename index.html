@@ -5,41 +5,58 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DataVis UFMG - Nathan Gallete</title>
     <link rel="stylesheet" href="style.css"> <!-- Link para o arquivo CSS -->
+    <!--JQuery-->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+    <!--BootStrap-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
+
+    <!--DevExtreme-->
+    <link rel="stylesheet" href="https://cdn3.devexpress.com/jslib/23.2.6/css/dx.light.css">
+    <script type="text/javascript" src="https://cdn3.devexpress.com/jslib/23.2.6/js/dx.all.js"></script>
+    <script type="text/javascript" src="data.js"></script>
+
 </head>
-<body>
+<body class="dx-viewport">
     <header>
         <h1>Visualização de Dados</h1>
     </header>
     <br />
     <br />
     <br />
-    <br />
     <main>
         <section id="home">
             <h2>Explicação</h2>
-            <p>Esta é a seção principal da página.</p>
+            <p>
+                A visualização abaixo tem o condão de analizar a evolução dos pedidos de ajustes nas aplicações dos clientes desde 01 de junho de 2023.
+                por conter informações potencialmente sigilosas, o conteúdo da demanda foi ocultado na base.
+            </p>
         </section>
 
-        <section id="sobre">
-            <h2>Sobre</h2>
-            <p>Informações sobre o site ou a pessoa.</p>
-        </section>
+        <div class="row">
+            <div class="col-md-3">
+                <div class="row">
+                    Cliente
+                    <div id="comboCliente"></div>
+                </div>
+                <div class="row">
+                    <br />
+                    Projeto
+                    <div id="comboProjeto"></div>
+                </div>
+                <div class="row">
+                    <br />
+                    Tipo de Demanda
+                    <div id="comboTipo"></div>
+                </div>
+            </div>
+            <div class="col-md-9">
+                <section>elementos visuais</section>
+            </div>
 
-        <section id="contato">
-            <h2>Contato</h2>
-            <form>
-                <label for="nome">Nome:</label>
-                <input type="text" id="nome" name="nome">
+        </div>
 
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email">
-
-                <label for="mensagem">Mensagem:</label>
-                <textarea id="mensagem" name="mensagem"></textarea>
-
-                <button type="submit">Enviar</button>
-            </form>
-        </section>
     </main>
 
     <footer>
