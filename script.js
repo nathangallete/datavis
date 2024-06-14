@@ -4,8 +4,7 @@ var projetosElem;
 var tipoElem;
 
 //Elementos Visuais
-
-
+var linhaTempoElem
 
 //Listas Filtradas
 var projetosFiltrados = [];
@@ -50,7 +49,6 @@ function criaComboClientes() {
     clientesElem = $("#comboCliente").dxTagBox("instance");
 }
 
-
 function criaComboProjetos() {
     $("#comboProjeto").dxTagBox({
         dataSource: projetos,
@@ -72,7 +70,6 @@ function criaComboProjetos() {
 
     projetosElem = $("#comboProjeto").dxTagBox("instance");
 }
-
 
 function criaComboTipo() {
     $("#comboTipo").dxTagBox({
@@ -96,6 +93,21 @@ function criaComboTipo() {
     tipoElem = $("#comboTipo").dxTagBox("instance");
 }
 
+//Precisa Implementar
+function criaLinhaTempo() {
+    $("#chartTickets").dxChart({
+        dataSource: tipos,
+        displayExpr: "NomeTipoTicket",
+        valueExpr: "NomeTipoTicket",
+        placeholder: "Selecione o Tipo de Demanda",
+        searchEnabled: true,
+        showSelectionControls: true,
+        selectAllText: "Selecionar Todos",
+        width: "100%"
+    });
+
+    tipoElem = $("#comboTipo").dxTagBox("instance");
+}
 
 
 
