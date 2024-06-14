@@ -1,4 +1,4 @@
-var clientesElem;
+﻿var clientesElem;
 var projetosElem;
 var tipoElem;
 
@@ -19,10 +19,26 @@ function criaComboClientes() {
         searchEnabled: true,
         showSelectionControls: true,
         selectAllText: "Selecionar Todos",
-        width: "100%"
+        width: "100%",
+        onSelectionChanged: function () {
+            if (projetosElem == null) {
+                return;
+            }
+
+            let clientesSelecionados = $("#comboCliente").dxTagBox('option', "selectedItems");
+            let NomeDosClientesSelecionados = clientesSelecionados.map(function (cliente) {
+                return cliente.Nome;
+            })
+
+            projetosElem.option({
+                dataSource: projetos.filter(function (proj) {
+                    return NomeDosClientesSelecionados.includes(proj.Cliente);
+                }),
+            });
+        }
     });
 
-    clientesElem = $("comboCliente").dxTagBox("instance");
+    clientesElem = $("#comboCliente").dxTagBox("instance");
 }
 
 
@@ -39,7 +55,7 @@ function criaComboProjetos() {
 
     });
 
-    clientesElem = $("comboProjeto").dxTagBox("instance");
+    projetosElem = $("#comboProjeto").dxTagBox("instance");
 }
 
 
@@ -56,7 +72,7 @@ function criaComboTipo() {
 
     });
 
-    clientesElem = $("comboTipo").dxTagBox("instance");
+    tipoElem = $("#comboTipo").dxTagBox("instance");
 }
 
 
