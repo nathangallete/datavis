@@ -355,7 +355,7 @@ function criaMedidorConcluidos(barGaugeData) {
         endValue: 100,
         values: barGaugeData.map(item => item.value),
         title: {
-            text: "Tickets (%) Concluídos por Tipo de Ticket",
+            text: "Tickets Concluídos por Tipo de Ticket (%)",
             font: {
                 size: 28
             }
@@ -373,6 +373,17 @@ function criaMedidorConcluidos(barGaugeData) {
                 };
             }
         },
+        legend: {
+            visible: true,
+            verticalAlignment: 'bottom',
+            horizontalAlignment: 'center',
+            customizeText(arg) {
+                const type = barGaugeData[arg.item.index].type;
+                return (type);
+            },
+        },
+        palette: 'ocean',
+
         width: '100%'
     });
 }
