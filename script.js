@@ -119,7 +119,75 @@ function filtraTickets() {
             && tiposFiltrados.includes(ticket.NomeTipoTicket))
             return ticket;
     });
+
+    atualizaDadosLinhaTempo();
 }
 
+function atualizaDadosLinhaTempo() {
+    const ticketCounts = {};
+
+    tickets.forEach(ticket => {
+        const date = new Date(ticket.DataCadastro);
+        const month = date.getMonth() + 1; // Months are 0-based, so add 1
+        const year = date.getFullYear();
+        const key = `${year}-${month.toString().padStart(2, "0")}`;
+
+        if (!ticketCounts[key]) {
+            ticketCounts[key] = {};
+        }
+
+        if (!ticketCounts[key][ticket.NomeTipoTicket]) {
+            ticketCounts[key][ticket.NomeTipoTicket] = 0;
+        }
+
+        ticketCounts[key][ticket.NomeTipoTicket]++;
+    });
+
+    const chartData = [];
+
+    for (const [date, types] of Object.entries(ticketCounts)) {
+        const dataPoint = { date };
+        for (const [type, count] of Object.entries(types)) {
+            dataPoint[type] = count;
+        }
+        chartData.push(dataPoint);
+    }
+
+
+
+
+    $("#chartTickets").dxChart({
+        dataSource: chartData,
+        commonSeriesSettings: {
+            argumentField: "date",
+            type: "line"
+        },
+        series: [
+            { valueField: "Ajuste visual", name: "Ajuste visual" },
+            { valueField: "Bug", name: "Bug" },
+            { valueField: "Suporte Técnico", name: "Suporte Técnico" },
+            { valueField: "Melhoria / Nova implementação", name: "Melhoria / Nova implementação" },
+            { valueField: "Melhoria / Nova implementação Contratual", name: "Melhoria / Nova implementação Contratual" }
+        ],
+        legend: {
+            verticalAlignment: "right",
+            horizontalAlignment: "center"
+        },
+        argumentAxis: {
+            label: {
+                format: "monthAndYear"
+            }
+        },
+        valueAxis: {
+            title: {
+                text: "Qtd. de Tickets"
+            }
+        },
+        tooltip: {
+            enabled: true
+        },
+        width: '100%'
+    });
+}
 
 

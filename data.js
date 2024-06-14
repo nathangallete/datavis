@@ -22,6 +22,33 @@ const tipos = [
 ]
 
 
+//const tickets = [
+//    {
+//        "Nome": "Minas Tênis Clube",
+//        "TicketTitulo": "Vencimento errado na colonia",
+//        "DataCadastro": "2024-03-12 00:00:00.000",
+//        "Descricao": "******",
+//        "Severidade": 3,
+//        "Usuario": "Leandro",
+//        "HorasPrevistas": 0,
+//        "HorasRealizadas": 0,
+//        "NomeStatusTicket": "Concluído",
+//        "NomeProjeto": "Sistema de Gestão de Clube",
+//        "NomeTipoTicket": "Bug"
+//    },
+//    {
+//        "Nome": "SafeHouseApp",
+//        "TicketTitulo": "Mal funcionamento nas cameras",
+//        "DataCadastro": "2023-10-06 00:00:00.000",
+//        "Descricao": "******",
+//        "Severidade": 3,
+//        "Usuario": "Rafael",
+//        "HorasPrevistas": 0,
+//        "HorasRealizadas": 6,
+//        "NomeStatusTicket": "Cancelado",
+//        "NomeProjeto": "SafeHouse - Integrações",
+//        "NomeTipoTicket": "Bug"
+//    }];
 
 
 
