@@ -293,7 +293,8 @@ function criaComparacaoHoras(chartData) {
         argumentAxis: {
             label: {
                 format: "monthAndYear"
-            }
+            },
+            argumentType: "datetime",
         },
         valueAxis: {
             title: {
