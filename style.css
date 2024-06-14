@@ -10,7 +10,7 @@ body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
     background-color: #f4f4f4;
-    padding-top: 60px; /* Espaço para o header fixo */
+    /*padding-top: 60px;*/ /* Espaço para o header fixo */
 }
 
 /* Estilos para o header */
@@ -19,7 +19,6 @@ header {
     color: #fff;
     padding: 1em 0;
     text-align: center;
-    position: fixed;
     width: 100%;
     top: 0;
     left: 0;

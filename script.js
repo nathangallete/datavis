@@ -211,11 +211,46 @@ function atualizaDadosLinhaTempo() {
     }
 
     criaComparacaoHoras(chartData3);
+
+    const ticketCounts2 = {};
+
+
+    if (ticketsFiltrados.length == 0)
+        return;
+
+    ticketsFiltrados.forEach(ticket => {
+        const type = ticket.NomeTipoTicket;
+        const status = ticket.NomeStatusTicket;
+
+        if (!ticketCounts2[type]) {
+            ticketCounts2[type] = { total: 0, concluido: 0 };
+        }
+
+        ticketCounts2[type].total++;
+        if (status === "Concluído" || status === "Cancelado" || status === "Em teste na Homologação") {
+            ticketCounts2[type].concluido++;
+        }
+    });
+
+    // Calcular a proporção de tickets concluídos
+    const barGaugeData = [];
+
+    for (const [type, counts] of Object.entries(ticketCounts2)) {
+        barGaugeData.push({
+            type: type,
+            value: (counts.concluido / counts.total * 100)
+        });
+    }
+
+    criaMedidorConcluidos(barGaugeData);
 }
 
 function criaLinhaTempo1(chartData, series) {
     $("#chartTickets").dxChart({
         dataSource: chartData,
+        title: {
+            text: "Tickets x Tipo de Demanda",
+        },
         commonSeriesSettings: {
             argumentField: "date",
             type: "line"
@@ -247,6 +282,9 @@ function criaLinhaTempo1(chartData, series) {
 function criaLinhaTempo2(chartData, series) {
     $("#chartTickets2").dxChart({
         dataSource: chartData,
+        title: {
+            text: "Tickets x Projeto",
+        },
         commonSeriesSettings: {
             argumentField: "date",
             type: "line"
@@ -278,6 +316,9 @@ function criaLinhaTempo2(chartData, series) {
 function criaComparacaoHoras(chartData) {
     $("#chartHoras").dxChart({
         dataSource: chartData,
+        title: {
+            text: "Horas Previstas x Realizadas",
+        },
         commonSeriesSettings: {
             argumentField: "date",
             type: "bar"
@@ -303,6 +344,34 @@ function criaComparacaoHoras(chartData) {
         },
         tooltip: {
             enabled: true
+        },
+        width: '100%'
+    });
+}
+
+function criaMedidorConcluidos(barGaugeData) {
+    $("#medidor").dxBarGauge({
+        startValue: 0,
+        endValue: 100,
+        values: barGaugeData.map(item => item.value),
+        title: {
+            text: "Tickets (%) Concluídos por Tipo de Ticket",
+            font: {
+                size: 28
+            }
+        },
+        customizeText(arg) {
+            return `${arg.valueText} %`;
+        },
+        tooltip: {
+            enabled: true,
+            customizeTooltip(arg) {
+                const type = barGaugeData[arg.index].type;
+                const value = barGaugeData[arg.index].value;
+                return {
+                    text: `${type}: ${value.toFixed(2)}%`
+                };
+            }
         },
         width: '100%'
     });
