@@ -9,10 +9,9 @@ var linhaTempoElem
 //Listas Filtradas
 var projetosFiltrados = [];
 var tiposFiltrados = [];
-
+var ticketsFiltrados = [];
 
 $(() => {
-
     criaComboClientes();
     criaComboProjetos();
     criaComboTipo();
@@ -38,11 +37,11 @@ function criaComboClientes() {
                 return cliente.Nome;
             })
 
-            projetosElem.option({
-                dataSource: projetos.filter(function (proj) {
-                    return NomeDosClientesSelecionados.includes(proj.Cliente);
-                }),
+            projetosFiltrados = projetos.filter(function (proj) {
+                return NomeDosClientesSelecionados.includes(proj.Cliente);
             });
+
+            projetosElem.option({ dataSource: projetosFiltrados });
         }
     });
 
@@ -51,7 +50,7 @@ function criaComboClientes() {
 
 function criaComboProjetos() {
     $("#comboProjeto").dxTagBox({
-        dataSource: projetos,
+        dataSource: projetosFiltrados,
         displayExpr: "Nome",
         valueExpr: "Nome",
         placeholder: "Selecione o Projeto",
@@ -65,6 +64,8 @@ function criaComboProjetos() {
             projetosFiltrados = projetosSelecionados.map(function (projeto) {
                 return projeto.Nome;
             });
+
+            filtraTickets();
         }
     });
 
@@ -87,6 +88,8 @@ function criaComboTipo() {
             tiposFiltrados = tiposSelecionados.map(function (tipo) {
                 return tipo.NomeTipoTicket;
             });
+
+            filtraTickets();
         }
     });
 
@@ -109,6 +112,14 @@ function criaLinhaTempo() {
     tipoElem = $("#comboTipo").dxTagBox("instance");
 }
 
+function filtraTickets() {
+
+    ticketsFiltrados = tickets.filter(function (ticket) {
+        if (projetosFiltrados.includes(ticket.NomeProjeto)
+            && tiposFiltrados.includes(ticket.NomeTipoTicket))
+            return ticket;
+    });
+}
 
 
 
