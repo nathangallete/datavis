@@ -180,16 +180,47 @@ function atualizaDadosLinhaTempo() {
 
     criaLinhaTempo1(chartData1, series1);
     criaLinhaTempo2(chartData2, series2);
+
+    const monthlyHours = {};
+
+    ticketsFiltrados.forEach(ticket => {
+        const date = new Date(ticket.DataCadastro);
+        const month = date.getMonth() + 1; // Months are 0-based, so add 1
+        const year = date.getFullYear();
+        const key = `${year}-${month.toString().padStart(2, '0')}`;
+
+        if (!monthlyHours[key]) {
+            monthlyHours[key] = {
+                HorasPrevistas: 0,
+                HorasRealizadas: 0
+            };
+        }
+
+        monthlyHours[key].HorasPrevistas += ticket.HorasPrevistas;
+        monthlyHours[key].HorasRealizadas += ticket.HorasRealizadas;
+    });
+
+    const chartData3 = [];
+
+    for (const [date, hours] of Object.entries(monthlyHours)) {
+        chartData3.push({
+            date: date,
+            HorasPrevistas: hours.HorasPrevistas,
+            HorasRealizadas: hours.HorasRealizadas
+        });
+    }
+
+    criaComparacaoHoras(chartData3);
 }
 
-function criaLinhaTempo1(chartData, series1) {
+function criaLinhaTempo1(chartData, series) {
     $("#chartTickets").dxChart({
         dataSource: chartData,
         commonSeriesSettings: {
             argumentField: "date",
             type: "line"
         },
-        series: series1,
+        series: series,
         legend: {
             verticalAlignment: "right",
             horizontalAlignment: "center"
@@ -213,15 +244,14 @@ function criaLinhaTempo1(chartData, series1) {
     });
 }
 
-
-function criaLinhaTempo2(chartData, series2) {
+function criaLinhaTempo2(chartData, series) {
     $("#chartTickets2").dxChart({
         dataSource: chartData,
         commonSeriesSettings: {
             argumentField: "date",
             type: "line"
         },
-        series: series2,
+        series: series,
         legend: {
             verticalAlignment: "right",
             horizontalAlignment: "center"
@@ -236,6 +266,38 @@ function criaLinhaTempo2(chartData, series2) {
         valueAxis: {
             title: {
                 text: "Qtd. de Tickets"
+            }
+        },
+        tooltip: {
+            enabled: true
+        },
+        width: '100%'
+    });
+}
+
+function criaComparacaoHoras(chartData) {
+    $("#chartHoras").dxChart({
+        dataSource: chartData,
+        commonSeriesSettings: {
+            argumentField: "date",
+            type: "bar"
+        },
+        series: [
+            { valueField: "HorasPrevistas", name: "Horas Previstas" },
+            { valueField: "HorasRealizadas", name: "Horas Realizadas" }
+        ],
+        legend: {
+            verticalAlignment: "bottom",
+            horizontalAlignment: "center"
+        },
+        argumentAxis: {
+            label: {
+                format: "monthAndYear"
+            }
+        },
+        valueAxis: {
+            title: {
+                text: "Horas"
             }
         },
         tooltip: {
