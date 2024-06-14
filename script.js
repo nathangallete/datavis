@@ -5,6 +5,7 @@ var tipoElem;
 
 //Elementos Visuais
 var linhaTempoElem
+var linhaTempo2Elem
 
 //Listas Filtradas
 var projetosFiltrados = [];
@@ -96,22 +97,6 @@ function criaComboTipo() {
     tipoElem = $("#comboTipo").dxTagBox("instance");
 }
 
-//Precisa Implementar
-function criaLinhaTempo() {
-    $("#chartTickets").dxChart({
-        dataSource: tipos,
-        displayExpr: "NomeTipoTicket",
-        valueExpr: "NomeTipoTicket",
-        placeholder: "Selecione o Tipo de Demanda",
-        searchEnabled: true,
-        showSelectionControls: true,
-        selectAllText: "Selecionar Todos",
-        width: "100%"
-    });
-
-    tipoElem = $("#comboTipo").dxTagBox("instance");
-}
-
 function filtraTickets() {
 
     ticketsFiltrados = tickets.filter(function (ticket) {
@@ -143,29 +128,100 @@ function atualizaDadosLinhaTempo() {
         ticketCounts[key][ticket.NomeTipoTicket]++;
     });
 
-    const chartData = [];
+    const chartData1 = [];
 
     for (const [date, types] of Object.entries(ticketCounts)) {
         const dataPoint = { date };
         for (const [type, count] of Object.entries(types)) {
             dataPoint[type] = count;
         }
-        chartData.push(dataPoint);
+        chartData1.push(dataPoint);
     }
 
 
-    const series = tiposFiltrados.map(name => ({
+    const series1 = tiposFiltrados.map(name => ({
         valueField: name,
         name: name
     }));
 
+
+    ticketsFiltrados.forEach(ticket => {
+        const date = new Date(ticket.DataCadastro);
+        const month = date.getMonth() + 1; // Months are 0-based, so add 1
+        const year = date.getFullYear();
+        const key = `${year}-${month.toString().padStart(2, "0")}`;
+
+        if (!ticketCounts[key]) {
+            ticketCounts[key] = {};
+        }
+
+        if (!ticketCounts[key][ticket.NomeProjeto]) {
+            ticketCounts[key][ticket.NomeProjeto] = 0;
+        }
+
+        ticketCounts[key][ticket.NomeProjeto]++;
+    });
+
+    const chartData2 = [];
+
+    for (const [date, types] of Object.entries(ticketCounts)) {
+        const dataPoint = { date };
+        for (const [type, count] of Object.entries(types)) {
+            dataPoint[type] = count;
+        }
+        chartData2.push(dataPoint);
+    }
+
+
+    const series2 = projetosFiltrados.map(name => ({
+        valueField: name,
+        name: name
+    }));
+
+    criaLinhaTempo1(chartData1, series1);
+    criaLinhaTempo2(chartData2, series2);
+}
+
+function criaLinhaTempo1(chartData, series1) {
     $("#chartTickets").dxChart({
         dataSource: chartData,
         commonSeriesSettings: {
             argumentField: "date",
             type: "line"
         },
-        series: series,
+        series: series1,
+        legend: {
+            verticalAlignment: "right",
+            horizontalAlignment: "center"
+        },
+        argumentAxis: {
+            label: {
+                format: "monthAndYear"
+            },
+            argumentType: "datetime",
+
+        },
+        valueAxis: {
+            title: {
+                text: "Qtd. de Tickets"
+            }
+        },
+        tooltip: {
+            enabled: true
+        },
+        width: '100%'
+    });
+}
+
+
+function criaLinhaTempo2(chartData, series2) {
+    $("#chartTickets2").dxChart({
+        dataSource: chartData,
+        commonSeriesSettings: {
+            argumentField: "date",
+            type: "line"
+        },
+        series: series2,
         legend: {
             verticalAlignment: "right",
             horizontalAlignment: "center"
