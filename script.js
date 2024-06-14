@@ -126,7 +126,7 @@ function filtraTickets() {
 function atualizaDadosLinhaTempo() {
     const ticketCounts = {};
 
-    tickets.forEach(ticket => {
+    ticketsFiltrados.forEach(ticket => {
         const date = new Date(ticket.DataCadastro);
         const month = date.getMonth() + 1; // Months are 0-based, so add 1
         const year = date.getFullYear();
@@ -154,7 +154,10 @@ function atualizaDadosLinhaTempo() {
     }
 
 
-
+    const series = tiposFiltrados.map(name => ({
+        valueField: name,
+        name: name
+    }));
 
     $("#chartTickets").dxChart({
         dataSource: chartData,
@@ -162,13 +165,7 @@ function atualizaDadosLinhaTempo() {
             argumentField: "date",
             type: "line"
         },
-        series: [
-            { valueField: "Ajuste visual", name: "Ajuste visual" },
-            { valueField: "Bug", name: "Bug" },
-            { valueField: "Suporte Técnico", name: "Suporte Técnico" },
-            { valueField: "Melhoria / Nova implementação", name: "Melhoria / Nova implementação" },
-            { valueField: "Melhoria / Nova implementação Contratual", name: "Melhoria / Nova implementação Contratual" }
-        ],
+        series: series,
         legend: {
             verticalAlignment: "right",
             horizontalAlignment: "center"
@@ -176,7 +173,9 @@ function atualizaDadosLinhaTempo() {
         argumentAxis: {
             label: {
                 format: "monthAndYear"
-            }
+            },
+            argumentType: "datetime",
+
         },
         valueAxis: {
             title: {

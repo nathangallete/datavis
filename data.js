@@ -17,8 +17,7 @@ const tipos = [
     { "NomeTipoTicket": "Ajuste visual" },
     { "NomeTipoTicket": "Bug" },
     { "NomeTipoTicket": "Suporte Técnico" },
-    { "NomeTipoTicket": "Melhoria / Nova implementação" },
-    { "NomeTipoTicket": "Melhoria / Nova implementação Contratual" },
+    { "NomeTipoTicket": "Melhoria Extraordinária" },
 ]
 
 
@@ -93,7 +92,7 @@ const tickets = [
         "HorasRealizadas": 22,
         "NomeStatusTicket": "Cancelado",
         "NomeProjeto": "SafeHouse - Integrações",
-        "NomeTipoTicket": "Melhoria/Nova implementação"
+        "NomeTipoTicket": "Melhoria Extraordinária"
     },
     {
         "Nome": "Minas Tênis Clube",
@@ -132,7 +131,7 @@ const tickets = [
         "HorasRealizadas": 0,
         "NomeStatusTicket": "Cancelado",
         "NomeProjeto": "Sistema de Gestão de Clube",
-        "NomeTipoTicket": "Melhoria/Nova implementação"
+        "NomeTipoTicket": "Melhoria Extraordinária"
     },
     {
         "Nome": "Minas Tênis Clube",
@@ -171,7 +170,7 @@ const tickets = [
         "HorasRealizadas": 0,
         "NomeStatusTicket": "Concluído",
         "NomeProjeto": "SigGES",
-        "NomeTipoTicket": "Melhoria/Nova implementação"
+        "NomeTipoTicket": "Melhoria Extraordinária"
     },
     {
         "Nome": "Minas Tênis Clube",
@@ -223,7 +222,7 @@ const tickets = [
         "HorasRealizadas": 0,
         "NomeStatusTicket": "Concluído",
         "NomeProjeto": "Sistema de Gestão de Clube",
-        "NomeTipoTicket": "Melhoria/Nova implementação"
+        "NomeTipoTicket": "Melhoria Extraordinária"
     },
     {
         "Nome": "Minas Tênis Clube",
@@ -262,7 +261,7 @@ const tickets = [
         "HorasRealizadas": 6,
         "NomeStatusTicket": "Cancelado",
         "NomeProjeto": "SafeHouse - Integrações",
-        "NomeTipoTicket": "Melhoria/Nova implementação"
+        "NomeTipoTicket": "Melhoria Extraordinária"
     },
     {
         "Nome": "Minas Tênis Clube",
@@ -327,7 +326,7 @@ const tickets = [
         "HorasRealizadas": 0,
         "NomeStatusTicket": "Concluído",
         "NomeProjeto": "Sistema de Gestão de Clube",
-        "NomeTipoTicket": "Melhoria/Nova implementação"
+        "NomeTipoTicket": "Melhoria Extraordinária"
     },
     {
         "Nome": "Minas Tênis Clube",
@@ -444,7 +443,7 @@ const tickets = [
         "HorasRealizadas": 0,
         "NomeStatusTicket": "Cancelado",
         "NomeProjeto": "Sistema de Gestão de Clube",
-        "NomeTipoTicket": "Melhoria/Nova implementação"
+        "NomeTipoTicket": "Melhoria Extraordinária"
     },
     {
         "Nome": "Minas Tênis Clube",
@@ -483,7 +482,7 @@ const tickets = [
         "HorasRealizadas": 1,
         "NomeStatusTicket": "Concluído",
         "NomeProjeto": "Sistema de Gestão de Clube",
-        "NomeTipoTicket": "Melhoria/Nova implementação"
+        "NomeTipoTicket": "Melhoria Extraordinária"
     },
     {
         "Nome": "Minas Tênis Clube",
@@ -522,7 +521,7 @@ const tickets = [
         "HorasRealizadas": 0,
         "NomeStatusTicket": "Concluído",
         "NomeProjeto": "Sistema de Gestão de Clube",
-        "NomeTipoTicket": "Melhoria/Nova implementação"
+        "NomeTipoTicket": "Melhoria Extraordinária"
     },
     {
         "Nome": "SafeHouseApp",
@@ -587,7 +586,7 @@ const tickets = [
         "HorasRealizadas": 0,
         "NomeStatusTicket": "Cancelado",
         "NomeProjeto": "SafeHouse - Integrações",
-        "NomeTipoTicket": "Melhoria/Nova implementação"
+        "NomeTipoTicket": "Melhoria Extraordinária"
     },
     {
         "Nome": "SafeHouseApp",
@@ -600,7 +599,7 @@ const tickets = [
         "HorasRealizadas": 0,
         "NomeStatusTicket": "Cancelado",
         "NomeProjeto": "SafeHouse - Integrações",
-        "NomeTipoTicket": "Melhoria/Nova implementação"
+        "NomeTipoTicket": "Melhoria Extraordinária"
     },
     {
         "Nome": "Gesmed",
@@ -704,7 +703,7 @@ const tickets = [
         "HorasRealizadas": 25,
         "NomeStatusTicket": "Desenvolvido. Aguardando Envio de Versão ao Cliente.",
         "NomeProjeto": "SETA",
-        "NomeTipoTicket": "Melhoria/Nova implementação"
+        "NomeTipoTicket": "Melhoria Extraordinária"
     },
     {
         "Nome": "Gesmed",
@@ -795,7 +794,7 @@ const tickets = [
         "HorasRealizadas": 0,
         "NomeStatusTicket": "Pendente de Análise Inicial",
         "NomeProjeto": "SafeHouse - Integrações",
-        "NomeTipoTicket": "Melhoria/Nova implementação"
+        "NomeTipoTicket": "Melhoria Extraordinária"
     },
     {
         "Nome": "Minas Tênis Clube",
@@ -808,7 +807,7 @@ const tickets = [
         "HorasRealizadas": 50,
         "NomeStatusTicket": "Concluído",
         "NomeProjeto": "Sistema de Gestão de Clube",
-        "NomeTipoTicket": "Melhoria/Nova implementação"
+        "NomeTipoTicket": "Melhoria Extraordinária"
     },
     {
         "Nome": "Minas Tênis Clube",
@@ -899,7 +898,7 @@ const tickets = [
         "HorasRealizadas": 0,
         "NomeStatusTicket": "Cancelado",
         "NomeProjeto": "Sistema de Gestão de Clube",
-        "NomeTipoTicket": "Melhoria/Nova implementação"
+        "NomeTipoTicket": "Melhoria Extraordinária"
     },
     {
         "Nome": "SafeHouseApp",
@@ -912,7 +911,7 @@ const tickets = [
         "HorasRealizadas": 0,
         "NomeStatusTicket": "Concluído",
         "NomeProjeto": "SafeHouse - Integrações",
-        "NomeTipoTicket": "Melhoria/Nova implementação"
+        "NomeTipoTicket": "Melhoria Extraordinária"
     },
     {
         "Nome": "Minas Tênis Clube",
@@ -951,7 +950,7 @@ const tickets = [
         "HorasRealizadas": 0,
         "NomeStatusTicket": "Cancelado",
         "NomeProjeto": "SafeHouse - Integrações",
-        "NomeTipoTicket": "Melhoria/Nova implementação"
+        "NomeTipoTicket": "Melhoria Extraordinária"
     },
     {
         "Nome": "Minas Tênis Clube",
@@ -964,7 +963,7 @@ const tickets = [
         "HorasRealizadas": 0,
         "NomeStatusTicket": "Cancelado",
         "NomeProjeto": "Sistema de Gestão de Clube",
-        "NomeTipoTicket": "Melhoria/Nova implementação"
+        "NomeTipoTicket": "Melhoria Extraordinária"
     },
     {
         "Nome": "Minas Tênis Clube",
@@ -1019,19 +1018,6 @@ const tickets = [
         "NomeTipoTicket": "Bug"
     },
     {
-        "Nome": "Gesmed",
-        "TicketTitulo": "Novo Campo nas Informações de saúde",
-        "DataCadastro": "2024-04-01 00:00:00.000",
-        "Descricao": "******",
-        "Severidade": 5,
-        "Usuario": "Lucas",
-        "HorasPrevistas": 0,
-        "HorasRealizadas": 0,
-        "NomeStatusTicket": "Aberto/Aprovado para desenvolvimento",
-        "NomeProjeto": "SigGES",
-        "NomeTipoTicket": "Melhoria/Nova implementação Contratual"
-    },
-    {
         "Nome": "SafeHouseApp",
         "TicketTitulo": "Analise - Colocar notificações que não tem área ir para o equipamento",
         "DataCadastro": "2024-01-30 00:00:00.000",
@@ -1055,7 +1041,7 @@ const tickets = [
         "HorasRealizadas": 18,
         "NomeStatusTicket": "Cancelado",
         "NomeProjeto": "SafeHouse - Integrações",
-        "NomeTipoTicket": "Melhoria/Nova implementação"
+        "NomeTipoTicket": "Melhoria Extraordinária"
     },
     {
         "Nome": "Minas Tênis Clube",
@@ -1094,7 +1080,7 @@ const tickets = [
         "HorasRealizadas": 0,
         "NomeStatusTicket": "Em teste na Homologação",
         "NomeProjeto": "Sistema de Gestão de Clube",
-        "NomeTipoTicket": "Melhoria/Nova implementação"
+        "NomeTipoTicket": "Melhoria Extraordinária"
     },
     {
         "Nome": "Minas Tênis Clube",
@@ -1159,7 +1145,7 @@ const tickets = [
         "HorasRealizadas": 5,
         "NomeStatusTicket": "Concluído",
         "NomeProjeto": "Sistema de Gestão de Clube",
-        "NomeTipoTicket": "Melhoria/Nova implementação"
+        "NomeTipoTicket": "Melhoria Extraordinária"
     },
     {
         "Nome": "Minas Tênis Clube",
@@ -1198,7 +1184,7 @@ const tickets = [
         "HorasRealizadas": 0,
         "NomeStatusTicket": "Pendente de Análise Inicial",
         "NomeProjeto": "SafeHouse - Integrações",
-        "NomeTipoTicket": "Melhoria/Nova implementação"
+        "NomeTipoTicket": "Melhoria Extraordinária"
     },
     {
         "Nome": "Minas Tênis Clube",
@@ -1276,7 +1262,7 @@ const tickets = [
         "HorasRealizadas": 0,
         "NomeStatusTicket": "Concluído",
         "NomeProjeto": "Sistema de Gestão de Clube",
-        "NomeTipoTicket": "Melhoria/Nova implementação"
+        "NomeTipoTicket": "Melhoria Extraordinária"
     },
     {
         "Nome": "SafeHouseApp",
@@ -1315,7 +1301,7 @@ const tickets = [
         "HorasRealizadas": 0,
         "NomeStatusTicket": "Pendente de Análise Inicial",
         "NomeProjeto": "SigGES",
-        "NomeTipoTicket": "Melhoria/Nova implementação"
+        "NomeTipoTicket": "Melhoria Extraordinária"
     },
     {
         "Nome": "Gesmed",
@@ -1367,7 +1353,7 @@ const tickets = [
         "HorasRealizadas": 0,
         "NomeStatusTicket": "Pendente de Análise Inicial",
         "NomeProjeto": "SigGES",
-        "NomeTipoTicket": "Melhoria/Nova implementação"
+        "NomeTipoTicket": "Melhoria Extraordinária"
     },
     {
         "Nome": "Minas Tênis Clube",
@@ -1432,7 +1418,7 @@ const tickets = [
         "HorasRealizadas": 4,
         "NomeStatusTicket": "Concluído",
         "NomeProjeto": "SafeHouse - Integrações",
-        "NomeTipoTicket": "Melhoria/Nova implementação"
+        "NomeTipoTicket": "Melhoria Extraordinária"
     },
     {
         "Nome": "Minas Tênis Clube",
@@ -1458,7 +1444,7 @@ const tickets = [
         "HorasRealizadas": 0,
         "NomeStatusTicket": "Cancelado",
         "NomeProjeto": "SafeHouse - Integrações",
-        "NomeTipoTicket": "Melhoria/Nova implementação"
+        "NomeTipoTicket": "Melhoria Extraordinária"
     },
     {
         "Nome": "Minas Tênis Clube",
@@ -1510,7 +1496,7 @@ const tickets = [
         "HorasRealizadas": 30,
         "NomeStatusTicket": "Cancelado",
         "NomeProjeto": "SafeHouse - Integrações",
-        "NomeTipoTicket": "Melhoria/Nova implementação"
+        "NomeTipoTicket": "Melhoria Extraordinária"
     },
     {
         "Nome": "Minas Tênis Clube",
@@ -1536,7 +1522,7 @@ const tickets = [
         "HorasRealizadas": 0,
         "NomeStatusTicket": "Concluído",
         "NomeProjeto": "SafeHouse - Integrações",
-        "NomeTipoTicket": "Melhoria/Nova implementação"
+        "NomeTipoTicket": "Melhoria Extraordinária"
     },
     {
         "Nome": "Minas Tênis Clube",
@@ -1562,7 +1548,7 @@ const tickets = [
         "HorasRealizadas": 0,
         "NomeStatusTicket": "Concluído",
         "NomeProjeto": "SigGES",
-        "NomeTipoTicket": "Melhoria/Nova implementação"
+        "NomeTipoTicket": "Melhoria Extraordinária"
     },
     {
         "Nome": "Minas Tênis Clube",
@@ -1588,7 +1574,7 @@ const tickets = [
         "HorasRealizadas": 0,
         "NomeStatusTicket": "Cancelado",
         "NomeProjeto": "SafeHouse - Integrações",
-        "NomeTipoTicket": "Melhoria/Nova implementação"
+        "NomeTipoTicket": "Melhoria Extraordinária"
     },
     {
         "Nome": "Minas Tênis Clube",
@@ -1614,7 +1600,7 @@ const tickets = [
         "HorasRealizadas": 0,
         "NomeStatusTicket": "Cancelado",
         "NomeProjeto": "SafeHouse - Integrações",
-        "NomeTipoTicket": "Melhoria/Nova implementação"
+        "NomeTipoTicket": "Melhoria Extraordinária"
     },
     {
         "Nome": "Minas Tênis Clube",
@@ -1627,7 +1613,7 @@ const tickets = [
         "HorasRealizadas": 0,
         "NomeStatusTicket": "Cancelado",
         "NomeProjeto": "Sistema de Gestão de Clube",
-        "NomeTipoTicket": "Melhoria/Nova implementação"
+        "NomeTipoTicket": "Melhoria Extraordinária"
     },
     {
         "Nome": "SafeHouseApp",
@@ -1640,7 +1626,7 @@ const tickets = [
         "HorasRealizadas": 0,
         "NomeStatusTicket": "Cancelado",
         "NomeProjeto": "SafeHouse - Integrações",
-        "NomeTipoTicket": "Melhoria/Nova implementação"
+        "NomeTipoTicket": "Melhoria Extraordinária"
     },
     {
         "Nome": "Minas Tênis Clube",
@@ -1654,19 +1640,6 @@ const tickets = [
         "NomeStatusTicket": "Concluído",
         "NomeProjeto": "Sistema de Gestão de Clube",
         "NomeTipoTicket": "Ajuste visual"
-    },
-    {
-        "Nome": "Gesmed",
-        "TicketTitulo": "Eventos médicos",
-        "DataCadastro": "2024-03-25 00:00:00.000",
-        "Descricao": "******",
-        "Severidade": 5,
-        "Usuario": "Lucas",
-        "HorasPrevistas": 0,
-        "HorasRealizadas": 0,
-        "NomeStatusTicket": "Pendente de Análise Inicial",
-        "NomeProjeto": "SigGES",
-        "NomeTipoTicket": "Melhoria/Nova implementação Contratual"
     },
     {
         "Nome": "Minas Tênis Clube",
@@ -1757,7 +1730,7 @@ const tickets = [
         "HorasRealizadas": 2,
         "NomeStatusTicket": "Concluído",
         "NomeProjeto": "Sistema de Gestão de Clube",
-        "NomeTipoTicket": "Melhoria/Nova implementação"
+        "NomeTipoTicket": "Melhoria Extraordinária"
     },
     {
         "Nome": "SafeHouseApp",
@@ -1770,7 +1743,7 @@ const tickets = [
         "HorasRealizadas": 2,
         "NomeStatusTicket": "Concluído",
         "NomeProjeto": "SafeHouse - Integrações",
-        "NomeTipoTicket": "Melhoria/Nova implementação"
+        "NomeTipoTicket": "Melhoria Extraordinária"
     },
     {
         "Nome": "Minas Tênis Clube",
@@ -1796,7 +1769,7 @@ const tickets = [
         "HorasRealizadas": 0,
         "NomeStatusTicket": "Em teste na Homologação",
         "NomeProjeto": "Sistema de Gestão de Clube",
-        "NomeTipoTicket": "Melhoria/Nova implementação"
+        "NomeTipoTicket": "Melhoria Extraordinária"
     },
     {
         "Nome": "Minas Tênis Clube",
@@ -1809,7 +1782,7 @@ const tickets = [
         "HorasRealizadas": 3,
         "NomeStatusTicket": "Concluído",
         "NomeProjeto": "Sistema de Gestão de Clube",
-        "NomeTipoTicket": "Melhoria/Nova implementação"
+        "NomeTipoTicket": "Melhoria Extraordinária"
     },
     {
         "Nome": "Minas Tênis Clube",
@@ -1822,7 +1795,7 @@ const tickets = [
         "HorasRealizadas": 0,
         "NomeStatusTicket": "Concluído",
         "NomeProjeto": "Sistema de Gestão de Clube",
-        "NomeTipoTicket": "Melhoria/Nova implementação"
+        "NomeTipoTicket": "Melhoria Extraordinária"
     },
     {
         "Nome": "Minas Tênis Clube",
@@ -1835,7 +1808,7 @@ const tickets = [
         "HorasRealizadas": 4,
         "NomeStatusTicket": "Concluído",
         "NomeProjeto": "Sistema de Gestão de Clube",
-        "NomeTipoTicket": "Melhoria/Nova implementação"
+        "NomeTipoTicket": "Melhoria Extraordinária"
     },
     {
         "Nome": "Minas Tênis Clube",
@@ -1913,7 +1886,7 @@ const tickets = [
         "HorasRealizadas": 0,
         "NomeStatusTicket": "Cancelado",
         "NomeProjeto": "Sistema de Gestão de Clube",
-        "NomeTipoTicket": "Melhoria/Nova implementação"
+        "NomeTipoTicket": "Melhoria Extraordinária"
     },
     {
         "Nome": "Minas Tênis Clube",
@@ -1991,7 +1964,7 @@ const tickets = [
         "HorasRealizadas": 0,
         "NomeStatusTicket": "Pendente de Análise Inicial",
         "NomeProjeto": "SafeHouse - Integrações",
-        "NomeTipoTicket": "Melhoria/Nova implementação"
+        "NomeTipoTicket": "Melhoria Extraordinária"
     },
     {
         "Nome": "Minas Tênis Clube",
@@ -2017,7 +1990,7 @@ const tickets = [
         "HorasRealizadas": 32,
         "NomeStatusTicket": "Cancelado",
         "NomeProjeto": "SafeHouse - Integrações",
-        "NomeTipoTicket": "Melhoria/Nova implementação"
+        "NomeTipoTicket": "Melhoria Extraordinária"
     },
     {
         "Nome": "Minas Tênis Clube",
@@ -2043,7 +2016,7 @@ const tickets = [
         "HorasRealizadas": 0,
         "NomeStatusTicket": "Cancelado",
         "NomeProjeto": "SafeHouse - Integrações",
-        "NomeTipoTicket": "Melhoria/Nova implementação"
+        "NomeTipoTicket": "Melhoria Extraordinária"
     },
     {
         "Nome": "Minas Tênis Clube",
@@ -2082,7 +2055,7 @@ const tickets = [
         "HorasRealizadas": 38,
         "NomeStatusTicket": "Cancelado",
         "NomeProjeto": "SafeHouse - Integrações",
-        "NomeTipoTicket": "Melhoria/Nova implementação"
+        "NomeTipoTicket": "Melhoria Extraordinária"
     },
     {
         "Nome": "Minas Tênis Clube",
@@ -2147,7 +2120,7 @@ const tickets = [
         "HorasRealizadas": 0,
         "NomeStatusTicket": "Cancelado",
         "NomeProjeto": "SafeHouse - Integrações",
-        "NomeTipoTicket": "Melhoria/Nova implementação"
+        "NomeTipoTicket": "Melhoria Extraordinária"
     },
     {
         "Nome": "Minas Tênis Clube",
@@ -2264,7 +2237,7 @@ const tickets = [
         "HorasRealizadas": 0,
         "NomeStatusTicket": "Pendente de Análise Inicial",
         "NomeProjeto": "SafeHouse - Integrações",
-        "NomeTipoTicket": "Melhoria/Nova implementação"
+        "NomeTipoTicket": "Melhoria Extraordinária"
     },
     {
         "Nome": "Minas Tênis Clube",
@@ -2290,7 +2263,7 @@ const tickets = [
         "HorasRealizadas": 0,
         "NomeStatusTicket": "Pendente de Análise Inicial",
         "NomeProjeto": "SafeHouse - Integrações",
-        "NomeTipoTicket": "Melhoria/Nova implementação"
+        "NomeTipoTicket": "Melhoria Extraordinária"
     },
     {
         "Nome": "Minas Tênis Clube",
@@ -2303,7 +2276,7 @@ const tickets = [
         "HorasRealizadas": 0,
         "NomeStatusTicket": "Concluído",
         "NomeProjeto": "Sistema de Gestão de Clube",
-        "NomeTipoTicket": "Melhoria/Nova implementação"
+        "NomeTipoTicket": "Melhoria Extraordinária"
     },
     {
         "Nome": "Minas Tênis Clube",
@@ -2316,7 +2289,7 @@ const tickets = [
         "HorasRealizadas": 0,
         "NomeStatusTicket": "Cancelado",
         "NomeProjeto": "Sistema de Gestão de Clube",
-        "NomeTipoTicket": "Melhoria/Nova implementação"
+        "NomeTipoTicket": "Melhoria Extraordinária"
     },
     {
         "Nome": "Minas Tênis Clube",
@@ -2394,7 +2367,7 @@ const tickets = [
         "HorasRealizadas": 4,
         "NomeStatusTicket": "Concluído",
         "NomeProjeto": "Sistema de Gestão de Clube",
-        "NomeTipoTicket": "Melhoria/Nova implementação"
+        "NomeTipoTicket": "Melhoria Extraordinária"
     },
     {
         "Nome": "Minas Tênis Clube",
@@ -2407,7 +2380,7 @@ const tickets = [
         "HorasRealizadas": 0,
         "NomeStatusTicket": "Reprovado no teste",
         "NomeProjeto": "Sistema de Gestão de Clube",
-        "NomeTipoTicket": "Melhoria/Nova implementação"
+        "NomeTipoTicket": "Melhoria Extraordinária"
     },
     {
         "Nome": "Minas Tênis Clube",
@@ -2420,7 +2393,7 @@ const tickets = [
         "HorasRealizadas": 2,
         "NomeStatusTicket": "Concluído",
         "NomeProjeto": "Sistema de Gestão de Clube",
-        "NomeTipoTicket": "Melhoria/Nova implementação"
+        "NomeTipoTicket": "Melhoria Extraordinária"
     },
     {
         "Nome": "SafeHouseApp",
@@ -2433,7 +2406,7 @@ const tickets = [
         "HorasRealizadas": 0,
         "NomeStatusTicket": "Pendente de Análise Inicial",
         "NomeProjeto": "SafeHouse - Integrações",
-        "NomeTipoTicket": "Melhoria/Nova implementação"
+        "NomeTipoTicket": "Melhoria Extraordinária"
     },
     {
         "Nome": "SafeHouseApp",
@@ -2446,7 +2419,7 @@ const tickets = [
         "HorasRealizadas": 0,
         "NomeStatusTicket": "Cancelado",
         "NomeProjeto": "SafeHouse - Integrações",
-        "NomeTipoTicket": "Melhoria/Nova implementação"
+        "NomeTipoTicket": "Melhoria Extraordinária"
     },
     {
         "Nome": "Minas Tênis Clube",
@@ -2576,7 +2549,7 @@ const tickets = [
         "HorasRealizadas": 0,
         "NomeStatusTicket": "Pendente de Análise Inicial",
         "NomeProjeto": "SigGES",
-        "NomeTipoTicket": "Melhoria/Nova implementação"
+        "NomeTipoTicket": "Melhoria Extraordinária"
     },
     {
         "Nome": "SafeHouseApp",
@@ -2589,7 +2562,7 @@ const tickets = [
         "HorasRealizadas": 0,
         "NomeStatusTicket": "Cancelado",
         "NomeProjeto": "SafeHouse - Integrações",
-        "NomeTipoTicket": "Melhoria/Nova implementação"
+        "NomeTipoTicket": "Melhoria Extraordinária"
     },
     {
         "Nome": "Minas Tênis Clube",
@@ -2706,7 +2679,7 @@ const tickets = [
         "HorasRealizadas": 0,
         "NomeStatusTicket": "Concluído",
         "NomeProjeto": "Sistema de Gestão de Clube",
-        "NomeTipoTicket": "Melhoria/Nova implementação"
+        "NomeTipoTicket": "Melhoria Extraordinária"
     },
     {
         "Nome": "Gesmed",
@@ -2732,7 +2705,7 @@ const tickets = [
         "HorasRealizadas": 2,
         "NomeStatusTicket": "Concluído",
         "NomeProjeto": "Sistema de Gestão de Clube",
-        "NomeTipoTicket": "Melhoria/Nova implementação"
+        "NomeTipoTicket": "Melhoria Extraordinária"
     },
     {
         "Nome": "Minas Tênis Clube",
@@ -2927,7 +2900,7 @@ const tickets = [
         "HorasRealizadas": 8,
         "NomeStatusTicket": "Em teste na Homologação",
         "NomeProjeto": "Sistema de Gestão de Clube",
-        "NomeTipoTicket": "Melhoria/Nova implementação"
+        "NomeTipoTicket": "Melhoria Extraordinária"
     },
     {
         "Nome": "SafeHouseApp",
@@ -2940,7 +2913,7 @@ const tickets = [
         "HorasRealizadas": 0,
         "NomeStatusTicket": "Cancelado",
         "NomeProjeto": "SafeHouse - Integrações",
-        "NomeTipoTicket": "Melhoria/Nova implementação"
+        "NomeTipoTicket": "Melhoria Extraordinária"
     },
     {
         "Nome": "Minas Tênis Clube",
@@ -2966,7 +2939,7 @@ const tickets = [
         "HorasRealizadas": 0,
         "NomeStatusTicket": "Em teste na Homologação",
         "NomeProjeto": "Sistema de Gestão de Clube",
-        "NomeTipoTicket": "Melhoria/Nova implementação"
+        "NomeTipoTicket": "Melhoria Extraordinária"
     },
     {
         "Nome": "Minas Tênis Clube",
@@ -2992,7 +2965,7 @@ const tickets = [
         "HorasRealizadas": 81,
         "NomeStatusTicket": "Concluído",
         "NomeProjeto": "SafeHouse - Integrações",
-        "NomeTipoTicket": "Melhoria/Nova implementação"
+        "NomeTipoTicket": "Melhoria Extraordinária"
     },
     {
         "Nome": "Minas Tênis Clube",
@@ -3057,7 +3030,7 @@ const tickets = [
         "HorasRealizadas": 0,
         "NomeStatusTicket": "Em teste na Homologação",
         "NomeProjeto": "SigGES",
-        "NomeTipoTicket": "Melhoria/Nova implementação"
+        "NomeTipoTicket": "Melhoria Extraordinária"
     },
     {
         "Nome": "Minas Tênis Clube",
@@ -3070,6 +3043,6 @@ const tickets = [
         "HorasRealizadas": 0,
         "NomeStatusTicket": "Em desenvolvimento",
         "NomeProjeto": "Sistema de Gestão de Clube",
-        "NomeTipoTicket": "Melhoria/Nova implementação"
+        "NomeTipoTicket": "Melhoria Extraordinária"
     }
 ];
