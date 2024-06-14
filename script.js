@@ -1,6 +1,15 @@
-﻿var clientesElem;
+﻿//Elementos dos Filtros
+var clientesElem;
 var projetosElem;
 var tipoElem;
+
+//Elementos Visuais
+
+
+
+//Listas Filtradas
+var projetosFiltrados = [];
+var tiposFiltrados = [];
 
 
 $(() => {
@@ -51,8 +60,14 @@ function criaComboProjetos() {
         searchEnabled: true,
         showSelectionControls: true,
         selectAllText: "Selecionar Todos",
-        width: "100%"
+        width: "100%",
+        onSelectionChanged: function () {
 
+            let projetosSelecionados = $("#comboProjeto").dxTagBox('option', "selectedItems");
+            projetosFiltrados = projetosSelecionados.map(function (projeto) {
+                return projeto.Nome;
+            });
+        }
     });
 
     projetosElem = $("#comboProjeto").dxTagBox("instance");
@@ -68,8 +83,14 @@ function criaComboTipo() {
         searchEnabled: true,
         showSelectionControls: true,
         selectAllText: "Selecionar Todos",
-        width: "100%"
+        width: "100%",
+        onSelectionChanged: function () {
 
+            let tiposSelecionados = $("#comboTipo").dxTagBox('option', "selectedItems");
+            tiposFiltrados = tiposSelecionados.map(function (tipo) {
+                return tipo.NomeTipoTicket;
+            });
+        }
     });
 
     tipoElem = $("#comboTipo").dxTagBox("instance");
